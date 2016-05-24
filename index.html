@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="FirstAnimation">
+			<img id="anim1" src="WesternDigital-Infographic_Anim1_StartFrame.jpg" />
+		</div>
+
+
+		<div class="SecondAnimation">
+			<img id="anim2" src="WD_Animation_SideTab_StartFrame.jpg" />
+		</div>
+
+		<div class="ThirdAnimation">
+			<img id="anim3" src="WD_TabSlider.jpg" />
+		</div>
+
+		<div class="FourthAnimation">
+			<img id="anim4" src="WD_3Piece_Section_StartFrame.jpg" />
+		</div>
+
+
+
+		<img id="infographic" src="WesternDigital-Infographic.png" />
+	</div>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="scrollMonitor.js"></script>
+
+
+	<script type="text/javascript">
+		$('#anim1').each(function (i, element) {
+
+			var watcher = scrollMonitor.create(element);
+
+			watcher.enterViewport(function () {
+				$(element).attr('src', 'WesternDigital-Infographic_Anim1.gif');
+			});
+
+		})
+	</script>
+
+	<script type="text/javascript">
+		$('#anim2').each(function (i, element) {
+
+			var watcher = scrollMonitor.create(element);
+
+			watcher.enterViewport(function () {
+				$(element).attr('src', 'WD_Animation_SideTab.gif');
+			});
+
+		})
+	</script>
+
+	<script type="text/javascript">
+		$('#anim3').each(function (i, element) {
+
+			var watcher = scrollMonitor.create(element);
+
+			watcher.enterViewport(function () {
+				$(element).attr('src', 'WD_TabSlider.gif');
+			});
+
+		})
+	</script>
+
+	<script type="text/javascript">
+		$('#anim4').each(function (i, element) {
+
+			var watcher = scrollMonitor.create(element);
+
+			watcher.enterViewport(function () {
+				$(element).attr('src', 'WD_3Piece_Section.gif');
+			});
+
+		})
+	</script>
+
+
+</body>
+
+</html>
